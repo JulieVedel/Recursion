@@ -1,4 +1,5 @@
 package com.company;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -9,6 +10,8 @@ public class Main {
         //System.out.println(fib(25));
         //System.out.println(recursivePow(2,3));
         //System.out.println(recursiveFak(5));
+
+        System.out.println(charCount("Anna", 'a'));
 
         //int[] array = {1,2,5,1,4,2,5,1,3,1,1,1,2,8,11,1};
         //System.out.println(count(1, array, array.length - 1));
@@ -84,6 +87,18 @@ public class Main {
         }
 
         return sum;
+    }
+
+    // opgaveark opgave 4 - interativ
+    public static int charCount(String s, char c) {
+        int count = 0;
+        s = s.toLowerCase();
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == c) {
+                count++;
+            }
+        }
+        return count;
     }
 
     // opgaveark opgave 5
