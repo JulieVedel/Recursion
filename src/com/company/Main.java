@@ -11,7 +11,7 @@ public class Main {
         //System.out.println(recursivePow(2,3));
         //System.out.println(recursiveFak(5));
 
-        System.out.println(charCount("Anna", 'a'));
+        //System.out.println(charCount("Anna", 'a'));
 
         //int[] array = {1,2,5,1,4,2,5,1,3,1,1,1,2,8,11,1};
         //System.out.println(count(1, array, array.length - 1));
@@ -19,13 +19,13 @@ public class Main {
         //String word = "hejsa";
         //reverseDisplay(word, word.length() - 1);
 
-        //int[] array = {1,2,3,4,5};
-        //reverseArray(array, array.length - 1);
+        int[] array = {1,7,4,5,8,2,3};
+        reverseArray(array, array.length - 1);
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter a decimal integer: ");
-        int decimal = input.nextInt();
-        System.out.println(decimal + " is hex " + dec2Hex(decimal));
+        //Scanner input = new Scanner(System.in);
+        //System.out.print("Enter a decimal integer: ");
+        //int decimal = input.nextInt();
+        //System.out.println(decimal + " is hex " + dec2Hex(decimal));
     }
 
     // opgaveark opgave 1 - iterativ
@@ -118,10 +118,10 @@ public class Main {
     }
 
     // opgaveark opgave 7 - recursiv
-    public static void reverseArray(int[] array, int size) {
-        if (size >= 0) {
-            System.out.println(array[size]);
-            reverseArray(array, size - 1);
+    public static void reverseArray(int[] array, int index) {
+        if (index >= 0) {
+            System.out.println(array[index]);
+            reverseArray(array, index - 1);
         }
     }
 
